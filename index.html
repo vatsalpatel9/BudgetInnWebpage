@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BudgetInn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+    <script>
+        var images = [
+            "media/FrontDesk.jpg",
+            "media/FrontDesk2.jpg",
+            "media/kingSize.jpg",
+            "media/doubleBed.jpg",
+            "media/tv.jpg"
+        ];
+        var i = 0;
+        function slides() {
+            document.getElementById("slideimage").src = images[i];
+            if (i < (images.length - 1))
+                i++;
+            else
+                i = 0;
+        }
+        setInterval(slides,3000);
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Budget Inn &vert; Russellville, AR</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="price.html">Prices</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="slideshow">
+                <img src="media/FrontDesk.jpg" alt="FrontDesk.jpg" id="slideimage">
+            </div>
+            <h2>Budget Inn Russellville</h2>
+            <p>We are located on East Main Street in Russellville, Arkansas. We offer extended stay periods with clean and comfortable rooms. Our property is surrounded by multiple restaurant and
+                a convenience store right next to us. So, indeed Budget Inn is the great, comfortable, peaceful
+                place to stay in.
+            </p>
+
+            <h3>Each room is equiped with:</h3>
+                <ul>
+                    <li>Mini Fridge</li>
+                    <li>Microwave</li>     
+                    <li>Air Conditioner</li>
+                    <li>Private Bathroom</li>          
+                </ul>
+                <ul id = "highlights">
+                    <li class="list"><i class="fas fa-parking"></i> Free Parking</li>
+                    <li class="list"><i class="fas fa-wifi"></i> Free WiFi</li>
+                    <li class="list"><i class="fas fa-basketball-ball"></i> Basketball Hoop</li>
+                </ul>
+            <div>
+            <h3>Reach us at</h3>
+                1206 East Main St.<br>
+                Russellville, AR 72801<br>
+                <span id="desktop">(479)-968-4959</span>
+                <a id="mobile" href="tel:4799684959">(479)-968-4959</a>
+            </div>
+
+        </main>
+
+        <footer>
+            Copyright &copy; 2020 BudgetInn Russellville, AR<br>
+            <a href="mailto:vpatel4@atu.edu">vpatel4@atu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BudgetInn-Resarvation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Budget Inn &vert; Russellville, AR</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="price.html">Prices</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Reserve your stay with us today!</h2>
+            <p>Call us or send as a request here.</p>
+            <div class="resarvation-form">
+                <p>All fields are required in order to complete reservation.</p>
+                <form method="post" action="resarvation.php" id="reservation-form">
+                    <input type="text" name="myFName" placeholder="First Name" class="form-control" required><br>
+                    <input type="text" name="myLName" placeholder="Last Name" class="form-control" required><br>
+                    <input type="text" name="myEmail" placeholder="E-Mail" class="form-control" required><br>
+                    <input type="tel" name="mobile" placeholder="Phone Number" class="form-control" required><br>
+                    <input type="date" name="myDate" class="form-control" required><br>
+                    <input type="number" name="nights" placeholder="Number of Nights" class="form-control" min="1" max="7"><br>
+                    <select size="1" name="room" class="from-control">
+                        <option>Select Type of Room</option>
+                        <option value="King Smoking">King Smoking</option>
+                        <option value="Double Smoking">Double Smoking</option>
+                        <option value="King Non-Smoking">King Non-Smoking</option>
+                        <option value="Double Non-Smoking">Double Non-Smoking</option>
+                    </select><br>
+
+                    <input class="form-control submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            Copyright &copy; 2020 BudgetInn Russellville, AR<br>
+            <a href="mailto:vpatel4@atu.edu">vpatel4@atu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>

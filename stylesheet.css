@@ -1,0 +1,300 @@
+body {
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color: #EAEAEA;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 960px;
+    max-width: 2048px;
+    background-color: #c9af98;
+    box-shadow: 3px 3px 3px #000000;
+}
+
+#highlights{
+    list-style: none;
+}
+
+.list{
+    display: inline;
+    padding-right: 10%;
+}
+
+header{
+    color: #3a4660;
+    background-image: url(media/hero.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding:5px;
+    height: 120px;
+    padding-left: 150px;
+    line-height: 60px;
+    font-size: 200%;
+}
+
+main{
+    padding: 20px 20px 20px 20px;
+    background-color: #E7E3D4;
+    color: #000000;
+    display: block;
+}
+
+main iframe{
+    margin-bottom: 10px;
+    float: right;
+    border: 0px;
+}
+
+nav{
+    background-color: #F7F9FB;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a:link{
+    color: brown;
+}
+
+nav a:visited{
+    color: #845007;
+}
+
+nav a:hover{
+    color: #3a4660;
+}
+
+.slideshow{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+#slideimage{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid goldenrod;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: gold;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+section{
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: auto;
+    font-size: 100%;
+    display: block;
+}
+
+section img{
+    float: left;
+    padding-right: 20px;
+}
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+hr{
+    margin-top: 30px;
+}
+
+a.button{
+    color: initial;
+}
+
+button{
+    background: gold;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #f44336;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+    border: 5px solid gold;
+    border-spacing: 0;
+}
+
+td,th{
+    padding: 10px;
+    text-emphasis: none;
+    border-style: none;
+}
+
+tr:nth-of-type(even){
+    background-color: #D2B48C;
+}
+
+footer{
+    font-size: 70%;
+    font-style: italic;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 64em){
+    body{
+        margin: 0;
+    }
+
+    #wrapper{
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+
+    h1{
+        margin: auto;
+    }
+
+    main{
+        margin-left: 0;
+    }
+
+    nav{
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    nav li{
+        display: inline;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 37.5em){
+    header{
+        font-size: 100%;
+    }
+
+    nav li{
+        display: inline-block;
+        width: 182px;
+        font-size: 100%;
+        text-align: center;
+        box-shadow: 2px 2px 2px #330000;
+        background-color: #f44336;
+        margin: 1%;
+        padding: 2.5%;
+    }
+
+    nav a{
+        display: block;
+        color: #333300;
+    }
+
+    nav a:link{
+        color: #FFFFFF;
+    }
+
+    nav a:visited{
+      color: #EAEAEA;  
+    } 
+
+    nav a:hover{
+        color: #FFD700;
+    }
+
+    section{
+        margin: 0;
+    }
+
+    section img{
+        display: none;
+    }
+
+    #mobile{
+        display: inline;
+    }
+
+    #desktop{
+        display: none;
+    }
+    
+    label{
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+    }
+    .form-control{
+        width: 220px;
+    }
+}
